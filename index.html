@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 10px;
+    }
+    .sideimage{
+        width: 100%;
+        height: 100vh;
+    }
+    .container{
+      
+     
+        display: grid;
+        grid-template-columns: 1fr ;    
+        
+    }
+    button{
+        display: none;
+       
+    }
+    #navigation{
+        transition: 1s; 
+    }
+    ul{
+        display: flex;
+        justify-content: flex-end;
+     
+        padding: 0 10px;
+    }
+    li{
+        font-size: 1.6rem;
+        list-style: none;
+        text-align: right;
+        padding: 18px 20px;
+        transition: 1s;
+    }
+    li:hover{
+       background-color: brown;
+    }
+    .main{
+        border: 2px solid red ;
+        border-bottom-right-radius: 30%;
+        border-bottom-left-radius: 30%;
+        background-color: aqua;
+        width: 100%;
+      
+        font-size: 1.6rem;
+        padding: 10px;
+        height: fit-content;
+
+    }
+    @media screen and (max-width:480px){
+        nav{
+            height: 100vh;
+            width: 100%;
+         background-image: linear-gradient(rgb(228, 201, 205),rgb(184, 123, 123),rgb(141, 163, 141),rgb(226, 211, 211));
+            border-bottom-right-radius: 50%;
+            border-top-left-radius: 50%;
+            display: flex;
+     justify-content: center;
+     align-items: center;
+     display: none;
+        }
+
+        ul{
+        display: block;
+    
+     
+    }
+
+    button{
+     display: block;
+        background-color: black;
+        color: #fff;
+        width: 58px;
+    height: 25px;
+    text-align: center;
+    }
+
+    li{
+        color: black;
+        font-size: 1.6rem;
+        list-style: none;
+      
+        padding: 18px 20px;
+    }
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        display: none;
+    }
+/* 2nd */
+    @media screen  and (max-width: 480px){
+        .main{
+            font-size: 1.4rem;
+        padding: 5px 15px;
+        color: yellow;
+        height: fit-content;
+        grid-template-rows:  12fr;
+    }  
+
+    img{
+        width: 300px;
+        height: 300px;
+        display: block;
+    }
+
+    p{
+        padding: 15px 5px;
+    }
+    h2{
+        padding: 15px 5px;
+    }
+    .container{
+       
+        border: 2px solid red ;
+       background-image: linear-gradient(rgb(105, 105, 28),rgb(168, 106, 106),rgb(109, 55, 64),rgb(62, 105, 62));
+        width: 100%;
+
+
+     
+      
+    }
+   
+    }
+    p{
+        text-align: justify;
+       
+    }
+    .onthe{
+        color: #fff;
+        background-color: pink;
+        border-radius: 42px 0 42px 0;
+    width: 91px;
+    height: 30px;
+}
+.onthe:hover{
+        /* background-image: (rgb(192, 255, 247) rgb(134, 134, 158),rgb(128, 120, 120),rgb(204, 51, 51)); */
+        background-color: rgb(58, 13, 20);
+        border-radius: 0 42px 0 42px;
+    width: 91px;
+    height: 30px; 
+    }
+</style>
+<body>
+
+ <div class="container">
+    <button onclick="jai()">navbar</button>
+    <nav id="navigation">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>service</li>
+            <li>blog</li>
+        </ul>
+    </nav>
+  
+
+     <div class="main">
+
+     <span id="radhe"></span>
+        <img src="tulsi.jpeg" alt="not found">
+        <button class="onthe">onclick </button>
+     <h2>jai mata dii this is my responsive web design </h2>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, officiis libero! Quam in aspernatur cupiditate pariatur minus ipsum ullam ex voluptates sapiente fuga! Sed assumenda sit pariatur? Amet repellendus harum nulla illo repellat eveniet, distinctio placeat laboriosam natus quam aut atque voluptas aliquid dolorem quidem accusamus veniam labore debitis. Illo deleniti id tempore dignissimos hic corporis. Necessitatibus incidunt iure, commodi itaque assumenda quis consectetur delectus ipsam illum esse unde cupiditate dolore recusandae nobis provident numquam iusto deleniti adipisci obcaecati. In vel, pariatur corporis sit eaque beatae aut at corrupti ex minus, accusamus repellat provident voluptate illum quos officia modi possimus.</p>
+     <h2>jai mata dii this is my responsive web design </h2>
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ea labore ratione cum reiciendis amet nam vitae illum doloribus saepe.
+     <h2>jai mata dii this is my responsive web design </h2>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse doloremque provident sequi adipisci eaque quaerat officia temporibus vel. Eius, perspiciatis amet illum quia nam sed asperiores est corporis quisquam voluptatum expedita doloribus aperiam error quod quaerat animi sint in libero. Debitis inventore esse, voluptas at impedit, nulla tenetur assumenda deleniti, voluptate ducimus quas hic! Atque dolor, praesentium quis ab hic blanditiis optio nesciunt dignissimos officia quae repellendus, sequi numquam exercitationem repudiandae assumenda excepturi sapiente ullam. Necessitatibus vitae consequuntur doloribus asperiores dignissimos qui voluptatibus perferendis, amet officia cupiditate nesciunt illo quo!
+     <h2>jai mata dii this is my responsive web design </h2>
+    </div>
+    <!-- <div class="sideimage">
+    
+    </div> -->
+ </div>
+ <script>
+  
+     function jai(){
+   const check=  document.getElementById("navigation")
+     if(  document.getElementById("navigation").style.display=="block"){
+        document.getElementById("navigation").style.display="none"
+     }else{
+        document.getElementById("navigation").style.display="block"
+   
+     }
+     } 
+ </script>
+</body>
+</html>
+<!-- 
+https://khushipo.github.io/asy -->
